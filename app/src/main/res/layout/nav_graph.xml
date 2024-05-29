@@ -1,0 +1,38 @@
+<!-- res/navigation/nav_graph.xml -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/regionFragment">
+
+    <fragment
+        android:id="@+id/regionFragment"
+        android:name="com.example.region.RegionFragment"
+        android:label="Region"
+        tools:layout="@layout/fragment_region">
+        <action
+            android:id="@+id/action_regionFragment_to_subregionFragment"
+            app:destination="@id/subregionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/subregionFragment"
+        android:name="com.example.region.SubregionFragment"
+        android:label="Subregion"
+        tools:layout="@layout/fragment_subregion" >
+        <action
+            android:id="@+id/action_subregionFragment_to_countryFragment"
+            app:destination="@id/countryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/countryFragment"
+        android:name="com.example.region.CountryFragment"
+        android:label="Country"
+        tools:layout="@layout/fragment_country" />
+</navigation>

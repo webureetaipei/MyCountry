@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.region.RegionFragment">
+
+    <Button
+        android:id="@+id/button_asia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asia"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button_europe" />
+
+    <Button
+        android:id="@+id/button_europe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Europe"
+        app:layout_constraintTop_toBottomOf="@id/button_asia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button_americas" />
+
+    <Button
+        android:id="@+id/button_americas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Americas"
+        app:layout_constraintTop_toBottomOf="@id/button_europe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

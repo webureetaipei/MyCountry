@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Region" parent="Theme.Material3.DayNight.NoActionBar">
+    </style>
+    <style name="Theme.Region" parent="Base.Theme.Region" />
+    <style name="Base.Theme.App" parent="Theme.Material3.DayNight.NoActionBar">
+    </style>
+    <style name="Theme.App" parent="Base.Theme.App" />
+</resources>
